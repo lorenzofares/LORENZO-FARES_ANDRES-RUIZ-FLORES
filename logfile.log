@@ -1,0 +1,85 @@
+[2024-08-13 20:33:27] [ ERROR] [OdontologoServiceTestH2:27] Error de Sintaxis en sentencia SQL "\000d\000a\000d\000aCREATE TABLE ODONTOLOGOS(\000d\000aID INT AUTO_INCREMENT PRIMARY KEY,\000d\000aNRODEMATRICULA INT NOT NULL,\000d\000aNOMBRE VARCHAR(50) NOT NULL,\000d\000aAPELLIDO VARCHAR(50) NOT NULL,\000d\000a[*])"; se esperaba "identifier"
+Syntax error in SQL statement "\000d\000a\000d\000aCREATE TABLE ODONTOLOGOS(\000d\000aID INT AUTO_INCREMENT PRIMARY KEY,\000d\000aNRODEMATRICULA INT NOT NULL,\000d\000aNOMBRE VARCHAR(50) NOT NULL,\000d\000aAPELLIDO VARCHAR(50) NOT NULL,\000d\000a[*])"; expected "identifier"; SQL statement:
+
+
+CREATE TABLE ODONTOLOGOS(
+ID INT AUTO_INCREMENT PRIMARY KEY,
+NRODEMATRICULA INT NOT NULL,
+NOMBRE VARCHAR(50) NOT NULL,
+APELLIDO VARCHAR(50) NOT NULL,
+) [42001-230]
+[2024-08-13 20:40:58] [ ERROR] [OdontologoServiceTestH2:28] Error de Sintaxis en sentencia SQL "\000d\000a\000d\000aCREATE TABLE ODONTOLOGOS(\000d\000aID INT AUTO_INCREMENT PRIMARY KEY,\000d\000aNroDeMatricula INT NOT NULL,\000d\000aNOMBRE VARCHAR(50) NOT NULL,\000d\000aAPELLIDO VARCHAR(50) NOT NULL\000d\000a)\000d\000a\000d\000a[*]INSERT INTO ODONTOLOGOS VALUES (DEFAULT,777,'PEPE','ARGENTO')"
+Syntax error in SQL statement "\000d\000a\000d\000aCREATE TABLE ODONTOLOGOS(\000d\000aID INT AUTO_INCREMENT PRIMARY KEY,\000d\000aNroDeMatricula INT NOT NULL,\000d\000aNOMBRE VARCHAR(50) NOT NULL,\000d\000aAPELLIDO VARCHAR(50) NOT NULL\000d\000a)\000d\000a\000d\000a[*]INSERT INTO ODONTOLOGOS VALUES (DEFAULT,777,'PEPE','ARGENTO')"; SQL statement:
+
+
+CREATE TABLE ODONTOLOGOS(
+ID INT AUTO_INCREMENT PRIMARY KEY,
+NroDeMatricula INT NOT NULL,
+NOMBRE VARCHAR(50) NOT NULL,
+APELLIDO VARCHAR(50) NOT NULL
+)
+
+INSERT INTO ODONTOLOGOS VALUES (DEFAULT,777,'PEPE','ARGENTO') [42000-230]
+[2024-08-13 20:44:44] [ INFO ] [OdontologoDaoH2:39] Odontologo nuevo: Odontologo{id=3, nroDeMatricula=5678, nombre='Carlos', apellido='Rodriguez'}
+[2024-08-13 20:44:59] [ ERROR] [OdontologoServiceTestH2:28] Tabla "ODONTOLOGOS" ya existe
+Table "ODONTOLOGOS" already exists; SQL statement:
+CREATE TABLE ODONTOLOGOS (
+    ID INT AUTO_INCREMENT PRIMARY KEY,
+    NroDeMatricula INT NOT NULL,
+    NOMBRE VARCHAR(50) NOT NULL,
+    APELLIDO VARCHAR(50) NOT NULL
+) [42101-230]
+[2024-08-13 20:46:49] [ ERROR] [OdontologoServiceTestH2:28] Tabla "ODONTOLOGOS" ya existe
+Table "ODONTOLOGOS" already exists; SQL statement:
+CREATE TABLE ODONTOLOGOS (
+    ID INT AUTO_INCREMENT PRIMARY KEY,
+    NroDeMatricula INT NOT NULL,
+    NOMBRE VARCHAR(50) NOT NULL,
+    APELLIDO VARCHAR(50) NOT NULL
+) [42101-230]
+[2024-08-13 20:47:35] [ INFO ] [OdontologoDaoEnMemoria:16] El odontologo fue guardadoOdontologo{id=1, nroDeMatricula=123, nombre='Lorenzo', apellido='Fares'}
+[2024-08-13 20:47:45] [ INFO ] [OdontologoDaoEnMemoria:16] El odontologo fue guardadoOdontologo{id=1, nroDeMatricula=123, nombre='Lorenzo', apellido='Fares'}
+[2024-08-13 20:47:45] [ INFO ] [OdontologoDaoEnMemoria:22] [Odontologo{id=1, nroDeMatricula=123, nombre='Lorenzo', apellido='Fares'}]
+[2024-08-13 20:47:58] [ ERROR] [OdontologoServiceTestH2:28] Tabla "ODONTOLOGOS" ya existe
+Table "ODONTOLOGOS" already exists; SQL statement:
+CREATE TABLE ODONTOLOGOS (
+    ID INT AUTO_INCREMENT PRIMARY KEY,
+    NroDeMatricula INT NOT NULL,
+    NOMBRE VARCHAR(50) NOT NULL,
+    APELLIDO VARCHAR(50) NOT NULL
+) [42101-230]
+[2024-08-13 20:49:11] [ INFO ] [OdontologoDaoEnMemoria:16] El odontologo fue guardadoOdontologo{id=1, nroDeMatricula=123, nombre='Lorenzo', apellido='Fares'}
+[2024-08-13 20:49:22] [ INFO ] [OdontologoDaoEnMemoria:16] El odontologo fue guardadoOdontologo{id=1, nroDeMatricula=123, nombre='Lorenzo', apellido='Fares'}
+[2024-08-13 20:49:22] [ INFO ] [OdontologoDaoEnMemoria:22] [Odontologo{id=1, nroDeMatricula=123, nombre='Lorenzo', apellido='Fares'}]
+[2024-08-13 20:52:08] [ INFO ] [OdontologoDaoEnMemoria:16] El odontologo fue guardadoOdontologo{id=1, nroDeMatricula=123, nombre='Lorenzo', apellido='Fares'}
+[2024-08-13 20:52:55] [ INFO ] [OdontologoDaoEnMemoria:16] El odontologo fue guardadoOdontologo{id=1, nroDeMatricula=123, nombre='Lorenzo', apellido='Fares'}
+[2024-08-13 20:52:55] [ INFO ] [OdontologoDaoEnMemoria:16] El odontologo fue guardadoOdontologo{id=2, nroDeMatricula=12, nombre='Juancito', apellido='Gonzalez'}
+[2024-08-13 20:53:25] [ INFO ] [OdontologoDaoEnMemoria:16] El odontologo fue guardadoOdontologo{id=1, nroDeMatricula=8, nombre='Andres', apellido='Ruiz'}
+[2024-08-13 20:53:25] [ INFO ] [OdontologoDaoEnMemoria:22] [Odontologo{id=1, nroDeMatricula=8, nombre='Andres', apellido='Ruiz'}]
+[2024-08-13 20:54:45] [ INFO ] [OdontologoDaoH2:39] Odontologo nuevo: Odontologo{id=3, nroDeMatricula=5678, nombre='Carlos', apellido='Rodriguez'}
+[2024-08-13 20:55:07] [ INFO ] [OdontologoDaoH2:39] Odontologo nuevo: Odontologo{id=3, nroDeMatricula=5678, nombre='Carlos', apellido='Rodriguez'}
+[2024-08-13 20:55:07] [ INFO ] [OdontologoDaoH2:89] Esta es la lista de todos los odontologos [Odontologo{id=1, nroDeMatricula=777, nombre='PEPE', apellido='ARGENTO'}, Odontologo{id=2, nroDeMatricula=201, nombre='moni', apellido='lopez'}, Odontologo{id=3, nroDeMatricula=5678, nombre='Carlos', apellido='Rodriguez'}]
+[2024-08-13 20:55:39] [ INFO ] [OdontologoDaoEnMemoria:16] El odontologo fue guardadoOdontologo{id=1, nroDeMatricula=123, nombre='Lorenzo', apellido='Fares'}
+[2024-08-13 20:55:46] [ INFO ] [OdontologoDaoEnMemoria:16] El odontologo fue guardadoOdontologo{id=1, nroDeMatricula=8, nombre='Andres', apellido='Ruiz'}
+[2024-08-13 20:55:46] [ INFO ] [OdontologoDaoEnMemoria:22] [Odontologo{id=1, nroDeMatricula=8, nombre='Andres', apellido='Ruiz'}]
+[2024-08-13 20:56:47] [ INFO ] [OdontologoDaoEnMemoria:16] El odontologo fue guardadoOdontologo{id=1, nroDeMatricula=123, nombre='Lorenzo', apellido='Fares'}
+[2024-08-13 20:56:52] [ INFO ] [OdontologoDaoEnMemoria:16] El odontologo fue guardadoOdontologo{id=1, nroDeMatricula=123, nombre='Lorenzo', apellido='Fares'}
+[2024-08-13 20:56:52] [ INFO ] [OdontologoDaoEnMemoria:22] [Odontologo{id=1, nroDeMatricula=123, nombre='Lorenzo', apellido='Fares'}]
+[2024-08-13 20:58:04] [ INFO ] [OdontologoDaoEnMemoria:16] El odontologo fue guardadoOdontologo{id=1, nroDeMatricula=123, nombre='Lorenzo', apellido='Fares'}
+[2024-08-13 20:58:04] [ INFO ] [OdontologoDaoEnMemoria:16] El odontologo fue guardadoOdontologo{id=2, nroDeMatricula=90, nombre='Andres', apellido='Ruiz'}
+[2024-08-13 20:58:04] [ INFO ] [OdontologoDaoEnMemoria:22] [Odontologo{id=1, nroDeMatricula=123, nombre='Lorenzo', apellido='Fares'}, Odontologo{id=2, nroDeMatricula=90, nombre='Andres', apellido='Ruiz'}]
+[2024-08-13 21:01:16] [ INFO ] [OdontologoDaoH2:39] Odontologo nuevo: Odontologo{id=3, nroDeMatricula=5678, nombre='Carlos', apellido='Rodriguez'}
+[2024-08-13 21:01:43] [ INFO ] [OdontologoDaoH2:39] Odontologo nuevo: Odontologo{id=3, nroDeMatricula=5678, nombre='Carlos', apellido='Rodriguez'}
+[2024-08-13 21:01:43] [ INFO ] [OdontologoDaoH2:89] Esta es la lista de todos los odontologos [Odontologo{id=1, nroDeMatricula=777, nombre='PEPE', apellido='ARGENTO'}, Odontologo{id=2, nroDeMatricula=201, nombre='moni', apellido='lopez'}, Odontologo{id=3, nroDeMatricula=5678, nombre='Carlos', apellido='Rodriguez'}]
+[2024-08-13 21:17:10] [ INFO ] [OdontologoDaoEnMemoria:16] El odontologo fue guardadoOdontologo{id=1, nroDeMatricula=123, nombre='Lorenzo', apellido='Fares'}
+[2024-08-13 21:17:19] [ INFO ] [OdontologoDaoEnMemoria:16] El odontologo fue guardadoOdontologo{id=1, nroDeMatricula=123, nombre='Lorenzo', apellido='Fares'}
+[2024-08-13 21:17:19] [ INFO ] [OdontologoDaoEnMemoria:22] [Odontologo{id=1, nroDeMatricula=123, nombre='Lorenzo', apellido='Fares'}]
+[2024-08-13 21:17:40] [ INFO ] [OdontologoDaoH2:39] Odontologo nuevo: Odontologo{id=3, nroDeMatricula=5678, nombre='Carlos', apellido='Rodriguez'}
+[2024-08-13 21:17:55] [ INFO ] [OdontologoDaoH2:39] Odontologo nuevo: Odontologo{id=3, nroDeMatricula=5678, nombre='Carlos', apellido='Rodriguez'}
+[2024-08-13 21:17:55] [ INFO ] [OdontologoDaoH2:89] Esta es la lista de todos los odontologos [Odontologo{id=1, nroDeMatricula=777, nombre='PEPE', apellido='ARGENTO'}, Odontologo{id=2, nroDeMatricula=201, nombre='moni', apellido='lopez'}, Odontologo{id=3, nroDeMatricula=5678, nombre='Carlos', apellido='Rodriguez'}]
+[2024-08-13 21:19:44] [ INFO ] [OdontologoDaoEnMemoria:16] El odontologo fue guardadoOdontologo{id=1, nroDeMatricula=123, nombre='Lorenzo', apellido='Fares'}
+[2024-08-13 21:19:49] [ INFO ] [OdontologoDaoEnMemoria:16] El odontologo fue guardadoOdontologo{id=1, nroDeMatricula=123, nombre='Lorenzo', apellido='Fares'}
+[2024-08-13 21:19:49] [ INFO ] [OdontologoDaoEnMemoria:22] [Odontologo{id=1, nroDeMatricula=123, nombre='Lorenzo', apellido='Fares'}]
+[2024-08-13 21:19:59] [ INFO ] [OdontologoDaoH2:39] Odontologo nuevo: Odontologo{id=3, nroDeMatricula=5678, nombre='Carlos', apellido='Rodriguez'}
+[2024-08-13 21:20:04] [ INFO ] [OdontologoDaoH2:39] Odontologo nuevo: Odontologo{id=3, nroDeMatricula=5678, nombre='Carlos', apellido='Rodriguez'}
+[2024-08-13 21:20:04] [ INFO ] [OdontologoDaoH2:89] Esta es la lista de todos los odontologos [Odontologo{id=1, nroDeMatricula=777, nombre='PEPE', apellido='ARGENTO'}, Odontologo{id=2, nroDeMatricula=201, nombre='moni', apellido='lopez'}, Odontologo{id=3, nroDeMatricula=5678, nombre='Carlos', apellido='Rodriguez'}]
